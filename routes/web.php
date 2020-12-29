@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'EmployeeController@index')->name('employees.index');
+Route::get('/employee/pdf', 'EmployeeController@exportToPDF')->name('exportToPDF');
